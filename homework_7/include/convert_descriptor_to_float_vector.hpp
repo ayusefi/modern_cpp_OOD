@@ -1,0 +1,1 @@
+std::vector<float> convertDescriptorToFloatVector(cv::Mat Descriptor);
