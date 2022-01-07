@@ -1,3 +1,13 @@
+ /*
+ *  This is the default license template.
+ *  
+ *  File: static_member_func_example.cpp
+ *  Author: abdullah
+ *  Copyright (c) 2022 abdullah
+ *  
+ *  To edit this license information: Press Ctrl+Shift+P and press 'Create new License Template...'.
+ */
+
 #include <math.h>
 #include <iostream>
 using std::cout;

@@ -1,3 +1,13 @@
+/* 
+ *  This is the default license template.
+ *  
+ *  File: homework_7.h
+ *  Author: abdullah
+ *  Copyright (c) 2022 abdullah
+ *  
+ *  To edit this license information: Press Ctrl+Shift+P and press 'Create new License Template...'.
+ */
+
 #ifndef HOMEWORK_7_H_
 #define HOMEWORK_7_H_
 

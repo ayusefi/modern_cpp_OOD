@@ -1,3 +1,13 @@
+ /*
+ *  This is the default license template.
+ *  
+ *  File: CMakeCXXCompilerId.cpp
+ *  Author: abdullah
+ *  Copyright (c) 2022 abdullah
+ *  
+ *  To edit this license information: Press Ctrl+Shift+P and press 'Create new License Template...'.
+ */
+
 /* This source file must have a .cpp extension so that all C++ compilers
    recognize the extension without flags.  Borland does not know .cxx for
    example.  */
