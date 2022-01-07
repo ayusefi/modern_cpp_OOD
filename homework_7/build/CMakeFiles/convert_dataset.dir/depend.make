@@ -142,9 +142,9 @@ CMakeFiles/convert_dataset.dir/src/compute_sifts.cpp.o: /usr/local/include/openc
 
 CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: ../include/compute_sifts.hpp
 CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: ../include/convert_dataset.hpp
-CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: ../include/convert_descriptor_to_float_vector.hpp
 CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: ../include/homework_7.h
 CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: ../include/kmeans.hpp
+CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: ../include/kmeans_utils.hpp
 CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: ../include/serialize.hpp
 CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: ../src/convert_dataset.cpp
 CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: /usr/local/include/opencv/cxcore.h
@@ -285,9 +285,9 @@ CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: /usr/local/include/ope
 
 CMakeFiles/convert_dataset.dir/src/serialize.cpp.o: ../include/compute_sifts.hpp
 CMakeFiles/convert_dataset.dir/src/serialize.cpp.o: ../include/convert_dataset.hpp
-CMakeFiles/convert_dataset.dir/src/serialize.cpp.o: ../include/convert_descriptor_to_float_vector.hpp
 CMakeFiles/convert_dataset.dir/src/serialize.cpp.o: ../include/homework_7.h
 CMakeFiles/convert_dataset.dir/src/serialize.cpp.o: ../include/kmeans.hpp
+CMakeFiles/convert_dataset.dir/src/serialize.cpp.o: ../include/kmeans_utils.hpp
 CMakeFiles/convert_dataset.dir/src/serialize.cpp.o: ../include/serialize.hpp
 CMakeFiles/convert_dataset.dir/src/serialize.cpp.o: ../src/serialize.cpp
 CMakeFiles/convert_dataset.dir/src/serialize.cpp.o: /usr/local/include/opencv/cxcore.h

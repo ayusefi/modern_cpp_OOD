@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o"
+  "CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o"
   "CMakeFiles/kmeans.dir/src/kmeans.cpp.o"
   "libkmeans.pdb"
   "libkmeans.a"

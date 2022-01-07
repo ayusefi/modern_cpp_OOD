@@ -5,6 +5,6 @@
 #include "serialize.hpp"
 #include "compute_sifts.hpp"
 #include "convert_dataset.hpp"
-#include "convert_descriptor_to_float_vector.hpp"
+#include "kmeans_utils.hpp"
 
 #endif  // HOMEWORK_7_H_

@@ -4,9 +4,9 @@
 CMakeFiles/main.dir/src/main.cpp.o
  ../include/compute_sifts.hpp
  ../include/convert_dataset.hpp
- ../include/convert_descriptor_to_float_vector.hpp
  ../include/homework_7.h
  ../include/kmeans.hpp
+ ../include/kmeans_utils.hpp
  ../include/serialize.hpp
  /home/abdullah/modern_cpp/modern_cpp_OOD/homework_7/src/main.cpp
  /usr/local/include/opencv/cxcore.h

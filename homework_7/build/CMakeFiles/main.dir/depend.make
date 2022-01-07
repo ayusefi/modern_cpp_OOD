@@ -3,9 +3,9 @@
 
 CMakeFiles/main.dir/src/main.cpp.o: ../include/compute_sifts.hpp
 CMakeFiles/main.dir/src/main.cpp.o: ../include/convert_dataset.hpp
-CMakeFiles/main.dir/src/main.cpp.o: ../include/convert_descriptor_to_float_vector.hpp
 CMakeFiles/main.dir/src/main.cpp.o: ../include/homework_7.h
 CMakeFiles/main.dir/src/main.cpp.o: ../include/kmeans.hpp
+CMakeFiles/main.dir/src/main.cpp.o: ../include/kmeans_utils.hpp
 CMakeFiles/main.dir/src/main.cpp.o: ../include/serialize.hpp
 CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/main.dir/src/main.cpp.o: /usr/local/include/opencv/cxcore.h

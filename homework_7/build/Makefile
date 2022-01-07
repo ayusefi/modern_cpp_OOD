@@ -219,33 +219,6 @@ src/convert_dataset.cpp.s:
 	$(MAKE) -f CMakeFiles/convert_dataset.dir/build.make CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.s
 .PHONY : src/convert_dataset.cpp.s
 
-src/convert_descriptor_to_float_vector.o: src/convert_descriptor_to_float_vector.cpp.o
-
-.PHONY : src/convert_descriptor_to_float_vector.o
-
-# target to build an object file
-src/convert_descriptor_to_float_vector.cpp.o:
-	$(MAKE) -f CMakeFiles/kmeans.dir/build.make CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o
-.PHONY : src/convert_descriptor_to_float_vector.cpp.o
-
-src/convert_descriptor_to_float_vector.i: src/convert_descriptor_to_float_vector.cpp.i
-
-.PHONY : src/convert_descriptor_to_float_vector.i
-
-# target to preprocess a source file
-src/convert_descriptor_to_float_vector.cpp.i:
-	$(MAKE) -f CMakeFiles/kmeans.dir/build.make CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.i
-.PHONY : src/convert_descriptor_to_float_vector.cpp.i
-
-src/convert_descriptor_to_float_vector.s: src/convert_descriptor_to_float_vector.cpp.s
-
-.PHONY : src/convert_descriptor_to_float_vector.s
-
-# target to generate assembly for a file
-src/convert_descriptor_to_float_vector.cpp.s:
-	$(MAKE) -f CMakeFiles/kmeans.dir/build.make CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.s
-.PHONY : src/convert_descriptor_to_float_vector.cpp.s
-
 src/kmeans.o: src/kmeans.cpp.o
 
 .PHONY : src/kmeans.o
@@ -272,6 +245,33 @@ src/kmeans.s: src/kmeans.cpp.s
 src/kmeans.cpp.s:
 	$(MAKE) -f CMakeFiles/kmeans.dir/build.make CMakeFiles/kmeans.dir/src/kmeans.cpp.s
 .PHONY : src/kmeans.cpp.s
+
+src/kmeans_utils.o: src/kmeans_utils.cpp.o
+
+.PHONY : src/kmeans_utils.o
+
+# target to build an object file
+src/kmeans_utils.cpp.o:
+	$(MAKE) -f CMakeFiles/kmeans.dir/build.make CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o
+.PHONY : src/kmeans_utils.cpp.o
+
+src/kmeans_utils.i: src/kmeans_utils.cpp.i
+
+.PHONY : src/kmeans_utils.i
+
+# target to preprocess a source file
+src/kmeans_utils.cpp.i:
+	$(MAKE) -f CMakeFiles/kmeans.dir/build.make CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.i
+.PHONY : src/kmeans_utils.cpp.i
+
+src/kmeans_utils.s: src/kmeans_utils.cpp.s
+
+.PHONY : src/kmeans_utils.s
+
+# target to generate assembly for a file
+src/kmeans_utils.cpp.s:
+	$(MAKE) -f CMakeFiles/kmeans.dir/build.make CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.s
+.PHONY : src/kmeans_utils.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -348,12 +348,12 @@ help:
 	@echo "... src/convert_dataset.o"
 	@echo "... src/convert_dataset.i"
 	@echo "... src/convert_dataset.s"
-	@echo "... src/convert_descriptor_to_float_vector.o"
-	@echo "... src/convert_descriptor_to_float_vector.i"
-	@echo "... src/convert_descriptor_to_float_vector.s"
 	@echo "... src/kmeans.o"
 	@echo "... src/kmeans.i"
 	@echo "... src/kmeans.s"
+	@echo "... src/kmeans_utils.o"
+	@echo "... src/kmeans_utils.i"
+	@echo "... src/kmeans_utils.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

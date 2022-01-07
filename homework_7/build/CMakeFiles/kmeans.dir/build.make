@@ -57,28 +57,28 @@ include CMakeFiles/kmeans.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/kmeans.dir/flags.make
 
-CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o: CMakeFiles/kmeans.dir/flags.make
-CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o: ../src/convert_descriptor_to_float_vector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdullah/modern_cpp/modern_cpp_OOD/homework_7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o -c /home/abdullah/modern_cpp/modern_cpp_OOD/homework_7/src/convert_descriptor_to_float_vector.cpp
+CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o: CMakeFiles/kmeans.dir/flags.make
+CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o: ../src/kmeans_utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdullah/modern_cpp/modern_cpp_OOD/homework_7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o"
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o -c /home/abdullah/modern_cpp/modern_cpp_OOD/homework_7/src/kmeans_utils.cpp
 
-CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.i"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abdullah/modern_cpp/modern_cpp_OOD/homework_7/src/convert_descriptor_to_float_vector.cpp > CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.i
+CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abdullah/modern_cpp/modern_cpp_OOD/homework_7/src/kmeans_utils.cpp > CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.i
 
-CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.s"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abdullah/modern_cpp/modern_cpp_OOD/homework_7/src/convert_descriptor_to_float_vector.cpp -o CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.s
+CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abdullah/modern_cpp/modern_cpp_OOD/homework_7/src/kmeans_utils.cpp -o CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.s
 
-CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o.requires:
+CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o.requires:
 
-.PHONY : CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o.requires
+.PHONY : CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o.requires
 
-CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o.provides: CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o.requires
-	$(MAKE) -f CMakeFiles/kmeans.dir/build.make CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o.provides.build
-.PHONY : CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o.provides
+CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o.provides: CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o.requires
+	$(MAKE) -f CMakeFiles/kmeans.dir/build.make CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o.provides.build
+.PHONY : CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o.provides
 
-CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o.provides.build: CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o
+CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o.provides.build: CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o
 
 
 CMakeFiles/kmeans.dir/src/kmeans.cpp.o: CMakeFiles/kmeans.dir/flags.make
@@ -107,13 +107,13 @@ CMakeFiles/kmeans.dir/src/kmeans.cpp.o.provides.build: CMakeFiles/kmeans.dir/src
 
 # Object files for target kmeans
 kmeans_OBJECTS = \
-"CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o" \
+"CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o" \
 "CMakeFiles/kmeans.dir/src/kmeans.cpp.o"
 
 # External object files for target kmeans
 kmeans_EXTERNAL_OBJECTS =
 
-libkmeans.a: CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o
+libkmeans.a: CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o
 libkmeans.a: CMakeFiles/kmeans.dir/src/kmeans.cpp.o
 libkmeans.a: CMakeFiles/kmeans.dir/build.make
 libkmeans.a: CMakeFiles/kmeans.dir/link.txt
@@ -126,7 +126,7 @@ CMakeFiles/kmeans.dir/build: libkmeans.a
 
 .PHONY : CMakeFiles/kmeans.dir/build
 
-CMakeFiles/kmeans.dir/requires: CMakeFiles/kmeans.dir/src/convert_descriptor_to_float_vector.cpp.o.requires
+CMakeFiles/kmeans.dir/requires: CMakeFiles/kmeans.dir/src/kmeans_utils.cpp.o.requires
 CMakeFiles/kmeans.dir/requires: CMakeFiles/kmeans.dir/src/kmeans.cpp.o.requires
 
 .PHONY : CMakeFiles/kmeans.dir/requires

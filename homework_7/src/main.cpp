@@ -15,6 +15,6 @@ int main()
   std::vector<cv::Mat> loaded_descriptors = LoadDataset(bin_path);
   std::cout << "Loading completed!\n";
 
-  cv::Mat kmeans_centroids = kMeans(loaded_descriptors, 5, 100);
+  cv::Mat kmeans_centroids = kMeans(loaded_descriptors, 5, 40);
   return 0;
 }

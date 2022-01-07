@@ -12,8 +12,6 @@
 experimental/filesystem
 -
 
-../include/convert_descriptor_to_float_vector.hpp
-
 ../include/homework_7.h
 kmeans.hpp
 ../include/kmeans.hpp
@@ -23,10 +21,12 @@ compute_sifts.hpp
 ../include/compute_sifts.hpp
 convert_dataset.hpp
 ../include/convert_dataset.hpp
-convert_descriptor_to_float_vector.hpp
-../include/convert_descriptor_to_float_vector.hpp
+kmeans_utils.hpp
+../include/kmeans_utils.hpp
 
 ../include/kmeans.hpp
+
+../include/kmeans_utils.hpp
 
 ../include/serialize.hpp
 

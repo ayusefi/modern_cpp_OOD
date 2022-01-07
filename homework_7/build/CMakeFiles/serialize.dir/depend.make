@@ -142,9 +142,9 @@ CMakeFiles/serialize.dir/src/compute_sifts.cpp.o: /usr/local/include/opencv2/xfe
 
 CMakeFiles/serialize.dir/src/serialize.cpp.o: ../include/compute_sifts.hpp
 CMakeFiles/serialize.dir/src/serialize.cpp.o: ../include/convert_dataset.hpp
-CMakeFiles/serialize.dir/src/serialize.cpp.o: ../include/convert_descriptor_to_float_vector.hpp
 CMakeFiles/serialize.dir/src/serialize.cpp.o: ../include/homework_7.h
 CMakeFiles/serialize.dir/src/serialize.cpp.o: ../include/kmeans.hpp
+CMakeFiles/serialize.dir/src/serialize.cpp.o: ../include/kmeans_utils.hpp
 CMakeFiles/serialize.dir/src/serialize.cpp.o: ../include/serialize.hpp
 CMakeFiles/serialize.dir/src/serialize.cpp.o: ../src/serialize.cpp
 CMakeFiles/serialize.dir/src/serialize.cpp.o: /usr/local/include/opencv/cxcore.h
