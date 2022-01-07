@@ -19,8 +19,10 @@
 cv::Mat kMeans(const std::vector<cv::Mat>& descriptors, int k, int max_iter)
 {
   std::vector<cv::Mat> stacked_centroids;
-  cv::Mat converted_descriptor = convertDescriptorToFloatMat(descriptors[7]);
-  // std::cout << converted_descriptor.rows << std::endl;
+  cv::Mat all_descriptors;
+  cv::vconcat(descriptors, all_descriptors);
+  cv::Mat converted_descriptor = convertDescriptorToFloatMat(all_descriptors);
+  // cv::Mat converted_descriptor = convertDescriptorToFloatMat(descriptors[0]);
   cv::Mat centroids = initializeCentroids(converted_descriptor, k);
   std::vector<int> assigned_points;
   std::cout << "Running kmeans to cluster descriptors...\n";

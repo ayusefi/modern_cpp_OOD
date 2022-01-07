@@ -92,6 +92,7 @@ main: CMakeFiles/main.dir/src/main.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: libkmeans.a
 main: libconvert_dataset.a
+main: libbow_dictionary.a
 main: /usr/local/lib/libopencv_stitching.so.3.4.3
 main: /usr/local/lib/libopencv_superres.so.3.4.3
 main: /usr/local/lib/libopencv_videostab.so.3.4.3

@@ -7,4 +7,6 @@
 #include "convert_dataset.hpp"
 #include "kmeans_utils.hpp"
 
+#include "bow_dictionary.hpp"
+
 #endif  // HOMEWORK_7_H_

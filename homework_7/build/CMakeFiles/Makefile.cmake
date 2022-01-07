@@ -49,8 +49,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/main.dir/DependInfo.cmake"
-  "CMakeFiles/convert_dataset.dir/DependInfo.cmake"
   "CMakeFiles/serialize.dir/DependInfo.cmake"
+  "CMakeFiles/bow_dictionary.dir/DependInfo.cmake"
+  "CMakeFiles/convert_dataset.dir/DependInfo.cmake"
   "CMakeFiles/kmeans.dir/DependInfo.cmake"
+  "CMakeFiles/main.dir/DependInfo.cmake"
+  "CMakeFiles/main_A_1.dir/DependInfo.cmake"
   )

@@ -140,6 +140,7 @@ CMakeFiles/convert_dataset.dir/src/compute_sifts.cpp.o: /usr/local/include/openc
 CMakeFiles/convert_dataset.dir/src/compute_sifts.cpp.o: /usr/local/include/opencv2/xfeatures2d/cuda.hpp
 CMakeFiles/convert_dataset.dir/src/compute_sifts.cpp.o: /usr/local/include/opencv2/xfeatures2d/nonfree.hpp
 
+CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: ../include/bow_dictionary.hpp
 CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: ../include/compute_sifts.hpp
 CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: ../include/convert_dataset.hpp
 CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: ../include/homework_7.h
@@ -283,6 +284,7 @@ CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: /usr/local/include/ope
 CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: /usr/local/include/opencv2/viz/widgets.hpp
 CMakeFiles/convert_dataset.dir/src/convert_dataset.cpp.o: /usr/local/include/opencv2/xfeatures2d/cuda.hpp
 
+CMakeFiles/convert_dataset.dir/src/serialize.cpp.o: ../include/bow_dictionary.hpp
 CMakeFiles/convert_dataset.dir/src/serialize.cpp.o: ../include/compute_sifts.hpp
 CMakeFiles/convert_dataset.dir/src/serialize.cpp.o: ../include/convert_dataset.hpp
 CMakeFiles/convert_dataset.dir/src/serialize.cpp.o: ../include/homework_7.h

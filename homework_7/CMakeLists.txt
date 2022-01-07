@@ -14,9 +14,13 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 
 add_library(serialize src/compute_sifts.cpp src/serialize.cpp) 
 add_library(kmeans src/kmeans_utils.cpp src/kmeans.cpp) 
+add_library(bow_dictionary src/bow_dictionary.cpp) 
 
 add_library(convert_dataset src/convert_dataset.cpp src/serialize.cpp src/compute_sifts.cpp) 
 target_link_libraries(convert_dataset serialize stdc++fs ${OpenCV_LIBS})
 
 add_executable(main src/main.cpp)
-target_link_libraries(main kmeans convert_dataset stdc++fs ${OpenCV_LIBS})
+target_link_libraries(main kmeans convert_dataset bow_dictionary stdc++fs ${OpenCV_LIBS})
+
+add_executable(main_A_1 src/main_A_1.cpp)
+target_link_libraries(main_A_1 kmeans convert_dataset bow_dictionary stdc++fs ${OpenCV_LIBS})

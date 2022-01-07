@@ -19,6 +19,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/abdullah/modern_cpp/modern_cpp_OOD/homework_7/build/CMakeFiles/kmeans.dir/DependInfo.cmake"
   "/home/abdullah/modern_cpp/modern_cpp_OOD/homework_7/build/CMakeFiles/convert_dataset.dir/DependInfo.cmake"
+  "/home/abdullah/modern_cpp/modern_cpp_OOD/homework_7/build/CMakeFiles/bow_dictionary.dir/DependInfo.cmake"
   "/home/abdullah/modern_cpp/modern_cpp_OOD/homework_7/build/CMakeFiles/serialize.dir/DependInfo.cmake"
   )
 

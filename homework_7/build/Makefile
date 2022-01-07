@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/abdullah/modern_cpp/modern_cpp_OOD/homework_7/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named serialize
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+serialize: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 serialize
+.PHONY : serialize
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+serialize/fast:
+	$(MAKE) -f CMakeFiles/serialize.dir/build.make CMakeFiles/serialize.dir/build
+.PHONY : serialize/fast
+
+#=============================================================================
+# Target rules for targets named bow_dictionary
+
+# Build rule for target.
+bow_dictionary: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bow_dictionary
+.PHONY : bow_dictionary
+
+# fast build rule for target.
+bow_dictionary/fast:
+	$(MAKE) -f CMakeFiles/bow_dictionary.dir/build.make CMakeFiles/bow_dictionary.dir/build
+.PHONY : bow_dictionary/fast
 
 #=============================================================================
 # Target rules for targets named convert_dataset
@@ -137,19 +150,6 @@ convert_dataset/fast:
 .PHONY : convert_dataset/fast
 
 #=============================================================================
-# Target rules for targets named serialize
-
-# Build rule for target.
-serialize: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 serialize
-.PHONY : serialize
-
-# fast build rule for target.
-serialize/fast:
-	$(MAKE) -f CMakeFiles/serialize.dir/build.make CMakeFiles/serialize.dir/build
-.PHONY : serialize/fast
-
-#=============================================================================
 # Target rules for targets named kmeans
 
 # Build rule for target.
@@ -162,14 +162,67 @@ kmeans/fast:
 	$(MAKE) -f CMakeFiles/kmeans.dir/build.make CMakeFiles/kmeans.dir/build
 .PHONY : kmeans/fast
 
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named main_A_1
+
+# Build rule for target.
+main_A_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_A_1
+.PHONY : main_A_1
+
+# fast build rule for target.
+main_A_1/fast:
+	$(MAKE) -f CMakeFiles/main_A_1.dir/build.make CMakeFiles/main_A_1.dir/build
+.PHONY : main_A_1/fast
+
+src/bow_dictionary.o: src/bow_dictionary.cpp.o
+
+.PHONY : src/bow_dictionary.o
+
+# target to build an object file
+src/bow_dictionary.cpp.o:
+	$(MAKE) -f CMakeFiles/bow_dictionary.dir/build.make CMakeFiles/bow_dictionary.dir/src/bow_dictionary.cpp.o
+.PHONY : src/bow_dictionary.cpp.o
+
+src/bow_dictionary.i: src/bow_dictionary.cpp.i
+
+.PHONY : src/bow_dictionary.i
+
+# target to preprocess a source file
+src/bow_dictionary.cpp.i:
+	$(MAKE) -f CMakeFiles/bow_dictionary.dir/build.make CMakeFiles/bow_dictionary.dir/src/bow_dictionary.cpp.i
+.PHONY : src/bow_dictionary.cpp.i
+
+src/bow_dictionary.s: src/bow_dictionary.cpp.s
+
+.PHONY : src/bow_dictionary.s
+
+# target to generate assembly for a file
+src/bow_dictionary.cpp.s:
+	$(MAKE) -f CMakeFiles/bow_dictionary.dir/build.make CMakeFiles/bow_dictionary.dir/src/bow_dictionary.cpp.s
+.PHONY : src/bow_dictionary.cpp.s
+
 src/compute_sifts.o: src/compute_sifts.cpp.o
 
 .PHONY : src/compute_sifts.o
 
 # target to build an object file
 src/compute_sifts.cpp.o:
-	$(MAKE) -f CMakeFiles/convert_dataset.dir/build.make CMakeFiles/convert_dataset.dir/src/compute_sifts.cpp.o
 	$(MAKE) -f CMakeFiles/serialize.dir/build.make CMakeFiles/serialize.dir/src/compute_sifts.cpp.o
+	$(MAKE) -f CMakeFiles/convert_dataset.dir/build.make CMakeFiles/convert_dataset.dir/src/compute_sifts.cpp.o
 .PHONY : src/compute_sifts.cpp.o
 
 src/compute_sifts.i: src/compute_sifts.cpp.i
@@ -178,8 +231,8 @@ src/compute_sifts.i: src/compute_sifts.cpp.i
 
 # target to preprocess a source file
 src/compute_sifts.cpp.i:
-	$(MAKE) -f CMakeFiles/convert_dataset.dir/build.make CMakeFiles/convert_dataset.dir/src/compute_sifts.cpp.i
 	$(MAKE) -f CMakeFiles/serialize.dir/build.make CMakeFiles/serialize.dir/src/compute_sifts.cpp.i
+	$(MAKE) -f CMakeFiles/convert_dataset.dir/build.make CMakeFiles/convert_dataset.dir/src/compute_sifts.cpp.i
 .PHONY : src/compute_sifts.cpp.i
 
 src/compute_sifts.s: src/compute_sifts.cpp.s
@@ -188,8 +241,8 @@ src/compute_sifts.s: src/compute_sifts.cpp.s
 
 # target to generate assembly for a file
 src/compute_sifts.cpp.s:
-	$(MAKE) -f CMakeFiles/convert_dataset.dir/build.make CMakeFiles/convert_dataset.dir/src/compute_sifts.cpp.s
 	$(MAKE) -f CMakeFiles/serialize.dir/build.make CMakeFiles/serialize.dir/src/compute_sifts.cpp.s
+	$(MAKE) -f CMakeFiles/convert_dataset.dir/build.make CMakeFiles/convert_dataset.dir/src/compute_sifts.cpp.s
 .PHONY : src/compute_sifts.cpp.s
 
 src/convert_dataset.o: src/convert_dataset.cpp.o
@@ -300,14 +353,41 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/main_A_1.o: src/main_A_1.cpp.o
+
+.PHONY : src/main_A_1.o
+
+# target to build an object file
+src/main_A_1.cpp.o:
+	$(MAKE) -f CMakeFiles/main_A_1.dir/build.make CMakeFiles/main_A_1.dir/src/main_A_1.cpp.o
+.PHONY : src/main_A_1.cpp.o
+
+src/main_A_1.i: src/main_A_1.cpp.i
+
+.PHONY : src/main_A_1.i
+
+# target to preprocess a source file
+src/main_A_1.cpp.i:
+	$(MAKE) -f CMakeFiles/main_A_1.dir/build.make CMakeFiles/main_A_1.dir/src/main_A_1.cpp.i
+.PHONY : src/main_A_1.cpp.i
+
+src/main_A_1.s: src/main_A_1.cpp.s
+
+.PHONY : src/main_A_1.s
+
+# target to generate assembly for a file
+src/main_A_1.cpp.s:
+	$(MAKE) -f CMakeFiles/main_A_1.dir/build.make CMakeFiles/main_A_1.dir/src/main_A_1.cpp.s
+.PHONY : src/main_A_1.cpp.s
+
 src/serialize.o: src/serialize.cpp.o
 
 .PHONY : src/serialize.o
 
 # target to build an object file
 src/serialize.cpp.o:
-	$(MAKE) -f CMakeFiles/convert_dataset.dir/build.make CMakeFiles/convert_dataset.dir/src/serialize.cpp.o
 	$(MAKE) -f CMakeFiles/serialize.dir/build.make CMakeFiles/serialize.dir/src/serialize.cpp.o
+	$(MAKE) -f CMakeFiles/convert_dataset.dir/build.make CMakeFiles/convert_dataset.dir/src/serialize.cpp.o
 .PHONY : src/serialize.cpp.o
 
 src/serialize.i: src/serialize.cpp.i
@@ -316,8 +396,8 @@ src/serialize.i: src/serialize.cpp.i
 
 # target to preprocess a source file
 src/serialize.cpp.i:
-	$(MAKE) -f CMakeFiles/convert_dataset.dir/build.make CMakeFiles/convert_dataset.dir/src/serialize.cpp.i
 	$(MAKE) -f CMakeFiles/serialize.dir/build.make CMakeFiles/serialize.dir/src/serialize.cpp.i
+	$(MAKE) -f CMakeFiles/convert_dataset.dir/build.make CMakeFiles/convert_dataset.dir/src/serialize.cpp.i
 .PHONY : src/serialize.cpp.i
 
 src/serialize.s: src/serialize.cpp.s
@@ -326,8 +406,8 @@ src/serialize.s: src/serialize.cpp.s
 
 # target to generate assembly for a file
 src/serialize.cpp.s:
-	$(MAKE) -f CMakeFiles/convert_dataset.dir/build.make CMakeFiles/convert_dataset.dir/src/serialize.cpp.s
 	$(MAKE) -f CMakeFiles/serialize.dir/build.make CMakeFiles/serialize.dir/src/serialize.cpp.s
+	$(MAKE) -f CMakeFiles/convert_dataset.dir/build.make CMakeFiles/convert_dataset.dir/src/serialize.cpp.s
 .PHONY : src/serialize.cpp.s
 
 # Help Target
@@ -336,12 +416,17 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
-	@echo "... main"
-	@echo "... convert_dataset"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
 	@echo "... serialize"
+	@echo "... bow_dictionary"
+	@echo "... convert_dataset"
 	@echo "... kmeans"
+	@echo "... main"
+	@echo "... main_A_1"
+	@echo "... src/bow_dictionary.o"
+	@echo "... src/bow_dictionary.i"
+	@echo "... src/bow_dictionary.s"
 	@echo "... src/compute_sifts.o"
 	@echo "... src/compute_sifts.i"
 	@echo "... src/compute_sifts.s"
@@ -357,6 +442,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/main_A_1.o"
+	@echo "... src/main_A_1.i"
+	@echo "... src/main_A_1.s"
 	@echo "... src/serialize.o"
 	@echo "... src/serialize.i"
 	@echo "... src/serialize.s"
